@@ -59,9 +59,10 @@ function pagar() {
     });
     
     message += `\nTotal: $${total.toFixed(2)}`;
-
+    const telefono = "593982294739";
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+    const whatsappUrl = 
+`https://wa.me/${telefono}?text=${encodedMessage}`;
     
     window.open(whatsappUrl, '_blank');
 }
